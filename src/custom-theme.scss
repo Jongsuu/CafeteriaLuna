@@ -1,0 +1,239 @@
+@use '@angular/material' as mat;
+
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define your theme with color palettes, typography and density
+$light-primary: (
+    50 : #f7e0e5,
+    100 : #ecb3bf,
+    200 : #df8095,
+    300 : #d24d6a,
+    400 : #c9264a,
+    500 : #bf002a,
+    600 : #b90025,
+    700 : #b1001f,
+    800 : #a90019,
+    900 : #9b000f,
+    A100 : #ffc6c8,
+    A200 : #ff9398,
+    A400 : #ff6067,
+    A700 : #ff474e,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+$dark-primary: (
+    50 : #350F10,
+    100 : #4F2323,
+    200 : #6A3938,
+    300 : #85504F,
+    400 : #A26866,
+    500 : #DC9A99,
+    600 : #FAB5B3,
+    700 : #FFDAD8,
+    800 : #FFEDEB,
+    900 : #FFF8F7,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$light-secondary: (
+    50 : #efebeb,
+    100 : #d6cccc,
+    200 : #bbabaa,
+    300 : #a08988,
+    400 : #8b6f6f,
+    500 : #775655,
+    600 : #6f4f4e,
+    700 : #644544,
+    800 : #5a3c3b,
+    900 : #472b2a,
+    A100 : #ff9793,
+    A200 : #ff6660,
+    A400 : #ff352d,
+    A700 : #ff1c14,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$dark-secondary: (
+    50 : #fcf7f7,
+    100 : #f8ebeb,
+    200 : #f3dedd,
+    300 : #eed1cf,
+    400 : #eac7c5,
+    500 : #e6bdbb,
+    600 : #e3b7b5,
+    700 : #dfaeac,
+    800 : #dba6a4,
+    900 : #d59896,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #fff2f1,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$light-error: (
+    50 : #f7e4e4,
+    100 : #eababa,
+    200 : #dd8d8d,
+    300 : #cf5f5f,
+    400 : #c43c3c,
+    500 : #ba1a1a,
+    600 : #b31717,
+    700 : #ab1313,
+    800 : #a30f0f,
+    900 : #940808,
+    A100 : #ffc1c1,
+    A200 : #ff8e8e,
+    A400 : #ff5b5b,
+    A700 : #ff4141,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+$dark-error: (
+    50 : #fff6f5,
+    100 : #ffe9e6,
+    200 : #ffdad5,
+    300 : #ffcbc4,
+    400 : #ffbfb8,
+    500 : #ffb4ab,
+    600 : #ffada4,
+    700 : #ffa49a,
+    800 : #ff9c91,
+    900 : #ff8c80,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$light-primary-palette: mat.define-palette($light-primary, 500);
+$light-accent-palette: mat.define-palette($light-secondary, A200, A100, A400);
+$light-warn-palette: mat.define-palette($light-error, A200, A100, A400);
+
+$dark-primary-palette: mat.define-palette($dark-primary, 500);
+$dark-accent-palette: mat.define-palette($dark-secondary, A200, A100, A400);
+$dark-warn-palette: mat.define-palette($dark-error, A200, A100, A400);
+
+$light-theme: mat.define-light-theme((
+ color: (
+   primary: $light-primary-palette,
+   accent: $light-accent-palette,
+   warn: $light-warn-palette,
+ ),
+ typography: mat.define-typography-config(),
+ density: 0,
+));
+
+$dark-theme: mat.define-dark-theme((
+ color: (
+   primary: $dark-primary-palette,
+   accent: $dark-accent-palette,
+   warn: $dark-warn-palette,
+ ),
+ typography: mat.define-typography-config(),
+ density: 0,
+));
+
+@media (prefers-color-scheme: light) {
+  @include mat.all-component-themes($light-theme);
+}
+
+@media (prefers-color-scheme: dark) {
+  @include mat.all-component-themes($dark-theme);
+}
