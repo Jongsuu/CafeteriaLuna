@@ -1,0 +1,135 @@
+[
+  {
+    "name": "Café Alegre",
+    "ingredients": "Espresso, leche, sirope de avellana",
+    "emotion": "happy",
+    "type": "coffee",
+    "image": "/cafe/cafe1.jpg"
+  },
+  {
+    "name": "Mocha Melancólico",
+    "ingredients": "Espresso, chocolate caliente, crema",
+    "emotion": "sad",
+    "type": "coffee",
+    "image": "/cafe/cafe1.jpg"
+  },
+  {
+    "name": "Café Neutro",
+    "ingredients": "Café, leche, azúcar",
+    "emotion": "neutral",
+    "type": "coffee",
+    "image": "/cafe/cafe8.jpg"
+  },
+  {
+    "name": "Latte Estresado",
+    "ingredients": "Café, leche de almendra, toque de vainilla",
+    "emotion": "stressed",
+    "type": "coffee",
+    "image": "/cafe/cafe1.jpg"
+  },
+  {
+    "name": "Expreso Furioso",
+    "ingredients": "Espresso, licor de naranja, pizca de canela",
+    "emotion": "angry",
+    "type": "coffee",
+    "image": "/cafe/cafe5.jpg"
+  },
+  {
+    "name": "Mocha con Nostalgia",
+    "ingredients": "Espresso, chocolate caliente, leche de vainilla",
+    "emotion": "sad",
+    "type": "coffee",
+    "image": "/cafe/cafe1.jpg"
+  },
+  {
+    "name": "Café en Equilibrio",
+    "ingredients": "Café cortado con leche",
+    "emotion": "neutral",
+    "type": "coffee",
+    "image": "/cafe/cafe1.jpg"
+  },
+  {
+    "name": "Latte Zen",
+    "ingredients": "Café, leche de coco, sirope de miel",
+    "emotion": "stressed",
+    "type": "coffee",
+    "image": "/cafe/cafe1.jpg"
+  },
+  {
+    "name": "Expreso Irritado",
+    "ingredients": "Espresso, licor de menta",
+    "emotion": "angry",
+    "type": "coffee",
+    "image": "/cafe/cafe6.jpg"
+  },
+  {
+    "name": "Café Radiante",
+    "ingredients": "Café, leche, sirope de fresa",
+    "emotion": "happy",
+    "type": "coffee",
+    "image": "/cafe/cafe2.jpg"
+  },
+  {
+    "name": "Latte Sereno",
+    "ingredients": "Espresso, leche de almendra, canela",
+    "emotion": "stressed",
+    "type": "coffee",
+    "image": "/cafe/cafe1.jpg"
+  },
+  {
+    "name": "Mocha Encantado",
+    "ingredients": "Espresso, chocolate caliente, toque de menta",
+    "emotion": "happy",
+    "type": "coffee",
+    "image": "/cafe/cafe3.jpg"
+  },
+  {
+    "name": "Café Gris",
+    "ingredients": "Café americano, leche, azúcar",
+    "emotion": "neutral",
+    "type": "coffee",
+    "image": "/cafe/cafe1.jpg"
+  },
+  {
+    "name": "Expreso Eufórico",
+    "ingredients": "Espresso doble, jarabe de vainilla",
+    "emotion": "happy",
+    "type": "coffee",
+    "image": "/cafe/cafe4.jpg"
+  },
+  {
+    "name": "Mocha Desanimado",
+    "ingredients": "Espresso, chocolate caliente, leche condensada",
+    "emotion": "sad",
+    "type": "coffee",
+    "image": "/cafe/cafe1.jpg"
+  },
+  {
+    "name": "Latte en Calma",
+    "ingredients": "Café, leche de almendra, vainilla",
+    "emotion": "stressed",
+    "type": "coffee",
+    "image": "/cafe/cafe1.jpg"
+  },
+  {
+    "name": "Mocha con Pesar",
+    "ingredients": "Espresso, chocolate caliente, leche de almendra",
+    "emotion": "sad",
+    "type": "coffee",
+    "image": "/cafe/cafe1.jpg"
+  },
+  {
+    "name": "Latte Silencioso",
+    "ingredients": "Café, leche, canela",
+    "emotion": "neutral",
+    "type": "coffee",
+    "image": "/cafe/cafe1.jpg"
+  },
+  {
+    "name": "Expreso Explosivo",
+    "ingredients": "Espresso, licor de cacao, toque de pimienta",
+    "emotion": "angry",
+    "type": "coffee",
+    "image": "/cafe/cafe7.jpg"
+  }
+]

@@ -230,6 +230,8 @@ $dark-theme: mat.define-dark-theme((
  density: 0,
 ));
 
+mat.$theme-ignore-duplication-warnings: true;
+
 @media (prefers-color-scheme: light) {
   @include mat.all-component-themes($light-theme);
 }

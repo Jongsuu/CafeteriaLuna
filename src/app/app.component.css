@@ -55,12 +55,13 @@ main > header {
 }
 
 .home-container-action div p {
+  cursor: default;
   margin-bottom: 12px;
 }
 
-.home-container-action button {
+.home-container-action a {
   border-radius: 18px;
-  padding: 12px 24px;
+  padding: 18px 24px;
 }
 
 .home-container img {

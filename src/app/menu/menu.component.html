@@ -1,0 +1,66 @@
+<section class="menu-section tertiary-container">
+  <h3 class="display-small on-tertiary-container-text" id="menu">Nuestros sabores</h3>
+  <header>
+    <h4 class="title-large on-tertiary-container-text">¿Cómo te sientes hoy?</h4>
+    <ul class="menu-section-actions" #menuSection>
+      <li>
+        <button mat-fab class="tertiary" matTooltip="Contento" (click)="changeMood('happy', menuSection)" [class.tertiary-toggle]="selectedMood !== 'happy'"
+          aria-label="Button that displays a tooltip when focused or hovered over">
+          <mat-icon class="on-tertiary-text">sentiment_very_satisfied</mat-icon>
+        </button>
+      </li>
+      <li>
+        <button mat-fab class="tertiary" matTooltip="Enfadado" (click)="changeMood('angry', menuSection)" [class.tertiary-toggle]="selectedMood !== 'angry'"
+          aria-label="Button that displays a tooltip when focused or hovered over">
+          <mat-icon svgIcon="sentiment_angry" class="on-tertiary-text"></mat-icon>
+        </button>
+      </li>
+      <li>
+        <button mat-fab class="tertiary" matTooltip="Neutro" (click)="changeMood('neutral', menuSection)" [class.tertiary-toggle]="selectedMood !== 'neutral'"
+          aria-label="Button that displays a tooltip when focused or hovered over">
+          <mat-icon class="on-tertiary-text">sentiment_neutral</mat-icon>
+        </button>
+      </li>
+      <li>
+        <button mat-fab class="tertiary" matTooltip="Estresado" (click)="changeMood('stressed', menuSection)" [class.tertiary-toggle]="selectedMood !== 'stressed'"
+          aria-label="Button that displays a tooltip when focused or hovered over">
+          <mat-icon svgIcon="sentiment_stressed" class="on-tertiary-text"></mat-icon>
+        </button>
+      </li>
+      <li>
+        <button mat-fab class="tertiary" matTooltip="Triste" (click)="changeMood('sad', menuSection)" [class.tertiary-toggle]="selectedMood !== 'sad'"
+          aria-label="Button that displays a tooltip when focused or hovered over">
+          <mat-icon class="on-tertiary-text">mood_bad</mat-icon>
+        </button>
+      </li>
+    </ul>
+  </header>
+  <section class="menu-category">
+    <div>
+      <h5 class="headline-large on-tertiary-container-text">Cafés</h5>
+      @if (coffeeFilteredItems.length > 0) {
+      <ul [class.loaded-menu]="loadMenu">
+        @for (item of coffeeFilteredItems; track item.name) {
+        <li>
+          <mat-card class="tertiary menu-item">
+            <mat-card-header>
+              <picture mat-card-avatar>
+                @if (item.emotion === "angry" || item.emotion === "stressed") {
+                <mat-icon class="on-tertiary-text" svgIcon="{{ getIcon(item.emotion) }}"></mat-icon>
+                }
+                @else {
+                <mat-icon class="on-tertiary-text">{{ getIcon(item.emotion) }}</mat-icon>
+                }
+              </picture>
+              <mat-card-title class="on-tertiary-text">{{ item.name }}</mat-card-title>
+              <mat-card-subtitle class="on-tertiary-text">{{ item.ingredients }}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="/assets/menu{{item.image}}" alt="Foto de {{ item.name }}" loading="lazy"/>
+          </mat-card>
+        </li>
+        }
+      </ul>
+      }
+    </div>
+  </section>
+</section>
