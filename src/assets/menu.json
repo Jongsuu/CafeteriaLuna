@@ -278,5 +278,75 @@
     "emotion": "angry",
     "type": "breakfast",
     "image": "/desayunos/desayuno5.jpg"
+  },
+  {
+    "name": "Pastel de Frutas Tropicales",
+    "ingredients": "Bizcocho esponjoso con capas de crema de piña y mango, decorado con frutas tropicales frescas",
+    "emotion": "happy",
+    "type": "cake",
+    "image": "/reposteria/pastel1.jpg"
+  },
+  {
+    "name": "Galletas de Arcoíris",
+    "ingredients": "Galletas suaves y coloridas con chips de chocolate blanco y arcoíris",
+    "emotion": "happy",
+    "type": "cake",
+    "image": "/reposteria/pastel2.jpg"
+  },
+  {
+    "name": "Cupcakes de Felicidad",
+    "ingredients": "Cupcakes de vainilla con crema de fresa y topping de confites de colores",
+    "emotion": "happy",
+    "type": "cake",
+    "image": "/reposteria/pastel3.jpg"
+  },
+  {
+    "name": "Tarta de Chocolate Amargo",
+    "ingredients": "Bizcocho de chocolate oscuro relleno con ganache de chocolate amargo y cubierto con glaseado de cacao",
+    "emotion": "sad",
+    "type": "cake",
+    "image": "/reposteria/pastel9.jpg"
+  },
+  {
+    "name": "Cookies de Chocolate Negro",
+    "ingredients": "Galletas de chocolate negro y nueces",
+    "emotion": "sad",
+    "type": "cake",
+    "image": "/reposteria/pastel10.jpg"
+  },
+  {
+    "name": "Magdalenas de Vainilla",
+    "ingredients": "Magdalenas esponjosas de vainilla con un toque de almendra",
+    "emotion": "neutral",
+    "type": "cake",
+    "image": "/reposteria/pastel5.jpg"
+  },
+  {
+    "name": "Biscotti de Almendra",
+    "ingredients": "Biscotti crujientes con almendras tostadas",
+    "emotion": "neutral",
+    "type": "cake",
+    "image": "/reposteria/pastel6.jpg"
+  },
+  {
+    "name": "Rollitos de Canela Relax",
+    "ingredients": "Rollos de canela esponjosos con glaseado de vainilla",
+    "emotion": "stressed",
+    "type": "cake",
+    "image": "/reposteria/pastel7.jpg"
+  },
+  {
+    "name": "Palmeritas Zen",
+    "ingredients": "Palmeritas de hojaldre con canela y almendras",
+    "emotion": "stressed",
+    "type": "cake",
+    "image": "/reposteria/pastel8.jpg"
+  },
+  {
+    "name": "Tarta de Limón Explosiva",
+    "ingredients": "Tarta de limón con relleno de crema de limón y merengue",
+    "emotion": "angry",
+    "type": "cake",
+    "image": "/reposteria/pastel4.jpg"
   }
 ]

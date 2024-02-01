@@ -22,48 +22,39 @@ import { MenuCategoryComponent } from '../menu-category/menu-category.component'
 })
 export class MenuComponent implements OnInit {
 
-  menuItems: MenuItem[] = [];
-  coffeeFilteredItems: MenuItem[] = [];
-  smoothieFilteredItems: MenuItem[] = [];
-  breakfastFilteredItems: MenuItem[] = [];
   private coffeeItems: MenuItem[] = [];
   private smoothieItems: MenuItem[] = [];
   private breakfastItems: MenuItem[] = [];
+  private cakeItems: MenuItem[] = [];
+  coffeeFilteredItems: MenuItem[] = [];
+  smoothieFilteredItems: MenuItem[] = [];
+  breakfastFilteredItems: MenuItem[] = [];
+  cakeFilteredItems: MenuItem[] = [];
 
   selectedMood: MenuMoodExtended = "none";
-  selectedMenuSections: MenuSections = {
-    coffee: true,
-    smoothie: true,
-    cake: true,
-    tea: false,
-    breakfast: true
-  };
-  loadMenu: MenuSections = {
-    coffee: false,
-    breakfast: true,
-    smoothie: false,
-    cake: true,
-    tea: false
-  };
+  selectedMenuSections: MenuSections = { coffee: false, smoothie: false, cake: true, tea: false, breakfast: false };
+  loadMenu: MenuSections = { coffee: false, breakfast: true, smoothie: false, cake: true, tea: false };
 
   constructor(private menuService: MenuService) { }
 
   ngOnInit(): void {
     this.menuService.getMenu().subscribe(response => {
-      this.menuItems = response;
       this.coffeeItems = response.filter(item => item.type === "coffee");
       this.smoothieItems = response.filter(item => item.type === "smoothie");
       this.breakfastItems = response.filter(item => item.type === "breakfast");
+      this.cakeItems = response.filter(item => item.type === "cake");
       if (this.selectedMood !== "none") {
         const mood = this.selectedMood;
         this.showCoffeeItems(this.coffeeItems.filter(item => item.emotion === mood));
         this.showSmoothieItems(this.smoothieItems.filter(item => item.emotion === mood));
         this.showBreakfastItems(this.breakfastItems.filter(item => item.emotion === mood));
+        this.showCakesItems(this.cakeItems.filter(item => item.emotion === mood));
       }
       else {
         this.showCoffeeItems(this.coffeeItems);
         this.showSmoothieItems(this.smoothieItems);
         this.showBreakfastItems(this.breakfastItems);
+        this.showCakesItems(this.cakeItems);
       }
     });
   }
@@ -75,20 +66,24 @@ export class MenuComponent implements OnInit {
       this.showCoffeeItems(this.coffeeItems);
       this.showSmoothieItems(this.smoothieItems);
       this.showBreakfastItems(this.breakfastItems);
+      this.showCakesItems(this.cakeItems);
     }
     else {
       this.selectedMood = mood;
       this.showCoffeeItems(this.coffeeItems.filter(item => item.emotion === mood));
       this.showSmoothieItems(this.smoothieItems.filter(item => item.emotion === mood));
       this.showBreakfastItems(this.breakfastItems.filter(item => item.emotion === mood));
+      this.showCakesItems(this.cakeItems.filter(item => item.emotion === mood));
     }
   }
 
   selectMenuSection(type: MenuType, menuSection: HTMLElement): void {
     menuSection.scrollIntoView({ block: "center", behavior: "smooth" });
     let wasVisible = this.selectedMenuSections[type];
-    this.loadMenu.smoothie = false;
     this.loadMenu.coffee = false;
+    this.loadMenu.smoothie = false;
+    this.loadMenu.breakfast = false;
+    this.loadMenu.cake = false;
     if (!wasVisible)
       this.selectedMenuSections[type] = !this.selectedMenuSections[type];
     setTimeout(() => {
@@ -96,6 +91,8 @@ export class MenuComponent implements OnInit {
         this.selectedMenuSections[type] = false;
       this.loadMenu.coffee = true;
       this.loadMenu.smoothie = true;
+      this.loadMenu.breakfast = true;
+      this.loadMenu.cake = true;
     }, 450);
   }
 
@@ -120,6 +117,14 @@ export class MenuComponent implements OnInit {
     setTimeout(() => {
       this.breakfastFilteredItems = items;
       this.loadMenu.breakfast = true;
+    }, 350);
+  }
+
+  private async showCakesItems(items: MenuItem[]): Promise<void> {
+    this.loadMenu.cake = false;
+    setTimeout(() => {
+      this.cakeFilteredItems = items;
+      this.loadMenu.cake = true;
     }, 350);
   }
 }
