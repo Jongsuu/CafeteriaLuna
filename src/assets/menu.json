@@ -4,133 +4,133 @@
     "ingredients": "Espresso, leche, sirope de avellana",
     "emotion": "happy",
     "type": "coffee",
-    "image": "/cafe/cafe1.jpg"
+    "image": "/cafes/cafe1.jpg"
   },
   {
     "name": "Mocha Melancólico",
     "ingredients": "Espresso, chocolate caliente, crema",
     "emotion": "sad",
     "type": "coffee",
-    "image": "/cafe/cafe16.jpg"
+    "image": "/cafes/cafe16.jpg"
   },
   {
     "name": "Café Neutro",
     "ingredients": "Café, leche, azúcar",
     "emotion": "neutral",
     "type": "coffee",
-    "image": "/cafe/cafe8.jpg"
+    "image": "/cafes/cafe8.jpg"
   },
   {
     "name": "Latte Estresado",
     "ingredients": "Café, leche de almendra, toque de vainilla",
     "emotion": "stressed",
     "type": "coffee",
-    "image": "/cafe/cafe12.jpg"
+    "image": "/cafes/cafe12.jpg"
   },
   {
     "name": "Expreso Furioso",
     "ingredients": "Espresso, licor de naranja, pizca de canela",
     "emotion": "angry",
     "type": "coffee",
-    "image": "/cafe/cafe5.jpg"
+    "image": "/cafes/cafe5.jpg"
   },
   {
     "name": "Mocha con Nostalgia",
     "ingredients": "Espresso, chocolate caliente, leche de vainilla",
     "emotion": "sad",
     "type": "coffee",
-    "image": "/cafe/cafe17.jpg"
+    "image": "/cafes/cafe17.jpg"
   },
   {
     "name": "Café en Equilibrio",
     "ingredients": "Café cortado con leche",
     "emotion": "neutral",
     "type": "coffee",
-    "image": "/cafe/cafe9.jpg"
+    "image": "/cafes/cafe9.jpg"
   },
   {
     "name": "Latte Zen",
     "ingredients": "Café, leche de coco, sirope de miel",
     "emotion": "stressed",
     "type": "coffee",
-    "image": "/cafe/cafe13.jpg"
+    "image": "/cafes/cafe13.jpg"
   },
   {
     "name": "Expreso Irritado",
     "ingredients": "Espresso, licor de menta",
     "emotion": "angry",
     "type": "coffee",
-    "image": "/cafe/cafe6.jpg"
+    "image": "/cafes/cafe6.jpg"
   },
   {
     "name": "Café Radiante",
     "ingredients": "Café, leche, sirope de fresa",
     "emotion": "happy",
     "type": "coffee",
-    "image": "/cafe/cafe2.jpg"
+    "image": "/cafes/cafe2.jpg"
   },
   {
     "name": "Latte Sereno",
     "ingredients": "Espresso, leche de almendra, canela",
     "emotion": "stressed",
     "type": "coffee",
-    "image": "/cafe/cafe14.jpg"
+    "image": "/cafes/cafe14.jpg"
   },
   {
     "name": "Mocha Encantado",
     "ingredients": "Espresso, chocolate caliente, toque de menta",
     "emotion": "happy",
     "type": "coffee",
-    "image": "/cafe/cafe3.jpg"
+    "image": "/cafes/cafe3.jpg"
   },
   {
     "name": "Café Gris",
     "ingredients": "Café americano, leche, azúcar",
     "emotion": "neutral",
     "type": "coffee",
-    "image": "/cafe/cafe10.jpg"
+    "image": "/cafes/cafe10.jpg"
   },
   {
     "name": "Expreso Eufórico",
     "ingredients": "Espresso doble, jarabe de vainilla",
     "emotion": "happy",
     "type": "coffee",
-    "image": "/cafe/cafe4.jpg"
+    "image": "/cafes/cafe4.jpg"
   },
   {
     "name": "Mocha Desanimado",
     "ingredients": "Espresso, chocolate caliente, leche condensada",
     "emotion": "sad",
     "type": "coffee",
-    "image": "/cafe/cafe18.jpg"
+    "image": "/cafes/cafe18.jpg"
   },
   {
     "name": "Latte en Calma",
     "ingredients": "Café, leche de almendra, vainilla",
     "emotion": "stressed",
     "type": "coffee",
-    "image": "/cafe/cafe15.jpg"
+    "image": "/cafes/cafe15.jpg"
   },
   {
     "name": "Mocha con Pesar",
     "ingredients": "Espresso, chocolate caliente, leche de almendra",
     "emotion": "sad",
     "type": "coffee",
-    "image": "/cafe/cafe19.jpg"
+    "image": "/cafes/cafe19.jpg"
   },
   {
     "name": "Latte Silencioso",
     "ingredients": "Café, leche, canela",
     "emotion": "neutral",
     "type": "coffee",
-    "image": "/cafe/cafe11.jpg"
+    "image": "/cafes/cafe11.jpg"
   },
   {
     "name": "Expreso Explosivo",
     "ingredients": "Espresso, licor de cacao, toque de pimienta",
     "emotion": "angry",
     "type": "coffee",
-    "image": "/cafe/cafe7.jpg"
+    "image": "/cafes/cafe7.jpg"
   },
   {
     "name": "Batido Feliz",
@@ -201,5 +201,82 @@
     "emotion": "angry",
     "type": "smoothie",
     "image": "/batidos/batido4.jpg"
+  },
+  {
+    "name": "Desayuno Alegre",
+    "ingredients": "Tostadas integrales con aguacate y huevo pochado, batido de frutas tropicales",
+    "emotion": "happy",
+    "type": "breakfast",
+    "image": "/desayunos/desayuno1.jpg"
+  },
+  {
+    "name": "Desayuno Vital",
+    "ingredients": "Avena cocida con plátano y nueces, zumo de naranja recién exprimido",
+    "emotion": "happy",
+    "type": "breakfast",
+    "image": "/desayunos/desayuno2.jpg"
+  },
+  {
+    "name": "Desayuno Energético",
+    "ingredients": "Tostadas con mantequilla de almendra, plátano en rodajas, té verde",
+    "emotion": "happy",
+    "type": "breakfast",
+    "image": "/desayunos/desayuno3.jpg"
+  },
+  {
+    "name": "Desayuno Reconfortante",
+    "ingredients": "Tostadas de pan integral con mermelada de fresa, yogur con arándanos",
+    "emotion": "sad",
+    "type": "breakfast",
+    "image": "/desayunos/desayuno10.jpg"
+  },
+  {
+    "name": "Desayuno Melancólico",
+    "ingredients": "Bol de granola con leche de almendra, manzana en trozos",
+    "emotion": "sad",
+    "type": "breakfast",
+    "image": "/desayunos/desayuno11.jpg"
+  },
+  {
+    "name": "Desayuno Equilibrado",
+    "ingredients": "Revuelto de claras de huevo con aguacate, queso feta, tomates y tostadas de trigo integral",
+    "emotion": "neutral",
+    "type": "breakfast",
+    "image": "/desayunos/desayuno6.jpg"
+  },
+  {
+    "name": "Desayuno Sencillo",
+    "ingredients": "Yogur natural con fresas frescas, arándanos y granola",
+    "emotion": "neutral",
+    "type": "breakfast",
+    "image": "/desayunos/desayuno7.jpg"
+  },
+  {
+    "name": "Desayuno Anti-Estrés",
+    "ingredients": "Tostadas integrales con aguacate y salmón ahumado, té de manzanilla",
+    "emotion": "stressed",
+    "type": "breakfast",
+    "image": "/desayunos/desayuno8.jpg"
+  },
+  {
+    "name": "Desayuno Relajado",
+    "ingredients": "Batido de plátano y almendra, tostadas integrales con mantequilla de almendra",
+    "emotion": "stressed",
+    "type": "breakfast",
+    "image": "/desayunos/desayuno9.jpg"
+  },
+  {
+    "name": "Desayuno Energía Explosiva",
+    "ingredients": "Tostadas con aguacate y huevo revuelto, café fuerte",
+    "emotion": "angry",
+    "type": "breakfast",
+    "image": "/desayunos/desayuno4.jpg"
+  },
+  {
+    "name": "Desayuno Picante",
+    "ingredients": "Tortilla con pimientos picantes y queso, zumo de naranja con jengibre",
+    "emotion": "angry",
+    "type": "breakfast",
+    "image": "/desayunos/desayuno5.jpg"
   }
 ]

@@ -1,8 +1,9 @@
-<section class="menu-category">
+@if (showSection) {
+<section class="menu-category" [class.loaded-menu]="loadMenu">
   <div>
     <h5 class="headline-large on-tertiary-container-text">{{ categoryTitle }}</h5>
     @if (filteredItems.length > 0) {
-    <ul [class.loaded-menu]="loadMenu">
+    <ul>
       @for (item of filteredItems; track item.name) {
       <li>
         <mat-card class="tertiary menu-item">
@@ -26,3 +27,4 @@
     }
   </div>
 </section>
+}

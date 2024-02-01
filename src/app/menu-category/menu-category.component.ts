@@ -18,6 +18,7 @@ export class MenuCategoryComponent {
   @Input() categoryTitle: string = "";
   @Input() filteredItems: MenuItem[] = [];
   @Input() loadMenu: boolean = false;
+  @Input() showSection: boolean = true;
 
   getIcon(emotion: MenuMood): string {
     if (emotion === "happy")

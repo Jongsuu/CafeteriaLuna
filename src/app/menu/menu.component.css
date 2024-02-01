@@ -8,9 +8,8 @@
 
 .menu-section > header {
   padding: 0 10%;
-}
-
-.menu-section h4 {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .menu-section-actions {

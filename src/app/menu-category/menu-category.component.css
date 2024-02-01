@@ -1,8 +1,18 @@
 .menu-category {
   margin-top: 32px;
+  opacity: 0;
   width: 100%;
   display: flex;
   justify-content: center;
+  transform: translateY(100px);
+  transition-property: opacity, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.menu-category.loaded-menu {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .menu-category > div {
@@ -20,23 +30,13 @@
   list-style: none;
   display: grid;
   justify-content: center;
-  opacity: 0;
   gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
   grid-template-rows: 300px;
-  transform: translateY(100px);
-  transition-property: opacity, transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
 }
 
 .menu-item {
   height: 300px;
-}
-
-.menu-category ul.loaded-menu {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .menu-item mat-icon {

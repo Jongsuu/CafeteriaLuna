@@ -1,40 +1,78 @@
 <section class="menu-section tertiary-container">
-  <h3 class="display-small on-tertiary-container-text" id="menu">Nuestros sabores</h3>
-  <header>
-    <h4 class="title-large on-tertiary-container-text">¿Cómo te sientes hoy?</h4>
-    <ul class="menu-section-actions" #menuSection>
-      <li>
-        <button mat-fab class="tertiary" matTooltip="Contento" (click)="changeMood('happy', menuSection)" [class.tertiary-toggle]="selectedMood !== 'happy'"
-          aria-label="Button that displays the name of the emotion">
-          <mat-icon class="on-tertiary-text">sentiment_very_satisfied</mat-icon>
-        </button>
-      </li>
-      <li>
-        <button mat-fab class="tertiary" matTooltip="Enfadado" (click)="changeMood('angry', menuSection)" [class.tertiary-toggle]="selectedMood !== 'angry'"
-          aria-label="Button that displays the name of the emotion">
-          <mat-icon svgIcon="sentiment_angry" class="on-tertiary-text"></mat-icon>
-        </button>
-      </li>
-      <li>
-        <button mat-fab class="tertiary" matTooltip="Neutro" (click)="changeMood('neutral', menuSection)" [class.tertiary-toggle]="selectedMood !== 'neutral'"
-          aria-label="Button that displays the name of the emotion">
-          <mat-icon class="on-tertiary-text">sentiment_neutral</mat-icon>
-        </button>
-      </li>
-      <li>
-        <button mat-fab class="tertiary" matTooltip="Estresado" (click)="changeMood('stressed', menuSection)" [class.tertiary-toggle]="selectedMood !== 'stressed'"
-          aria-label="Button that displays the name of the emotion">
-          <mat-icon svgIcon="sentiment_stressed" class="on-tertiary-text"></mat-icon>
-        </button>
-      </li>
-      <li>
-        <button mat-fab class="tertiary" matTooltip="Triste" (click)="changeMood('sad', menuSection)" [class.tertiary-toggle]="selectedMood !== 'sad'"
-          aria-label="Button that displays the name of the emotion">
-          <mat-icon class="on-tertiary-text">mood_bad</mat-icon>
-        </button>
-      </li>
-    </ul>
+  <h3 class="display-small on-tertiary-container-text" id="menu" #menuSection>Nuestros sabores</h3>
+  <header #menuActionsHeader>
+    <div>
+      <h4 class="title-large on-tertiary-container-text">¿Cómo te sientes hoy?</h4>
+      <ul class="menu-section-actions">
+        <li>
+          <button mat-fab class="tertiary" matTooltip="Contento" (click)="changeMood('happy', menuActionsHeader)" [class.tertiary-toggle]="selectedMood !== 'happy'"
+            aria-label="Button that displays the name of the emotion">
+            <mat-icon class="on-tertiary-text">sentiment_very_satisfied</mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-fab class="tertiary" matTooltip="Enfadado" (click)="changeMood('angry', menuActionsHeader)" [class.tertiary-toggle]="selectedMood !== 'angry'"
+            aria-label="Button that displays the name of the emotion">
+            <mat-icon svgIcon="sentiment_angry" class="on-tertiary-text"></mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-fab class="tertiary" matTooltip="Neutro" (click)="changeMood('neutral', menuActionsHeader)" [class.tertiary-toggle]="selectedMood !== 'neutral'"
+            aria-label="Button that displays the name of the emotion">
+            <mat-icon class="on-tertiary-text">sentiment_neutral</mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-fab class="tertiary" matTooltip="Estresado" (click)="changeMood('stressed', menuActionsHeader)" [class.tertiary-toggle]="selectedMood !== 'stressed'"
+            aria-label="Button that displays the name of the emotion">
+            <mat-icon svgIcon="sentiment_stressed" class="on-tertiary-text"></mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-fab class="tertiary" matTooltip="Triste" (click)="changeMood('sad', menuActionsHeader)" [class.tertiary-toggle]="selectedMood !== 'sad'"
+            aria-label="Button that displays the name of the emotion">
+            <mat-icon class="on-tertiary-text">mood_bad</mat-icon>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="title-large on-tertiary-container-text">¿Qué te apetece?</h4>
+      <ul class="menu-section-actions">
+        <li>
+          <button mat-fab class="tertiary" matTooltip="Cafés" (click)="selectMenuSection('coffee', menuSection)" [class.tertiary-toggle]="!selectedMenuSections.coffee"
+            aria-label="Button that displays the name of the emotion">
+            <mat-icon class="on-tertiary-text">coffee</mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-fab class="tertiary" matTooltip="Desayunos" (click)="selectMenuSection('breakfast', menuSection)" [class.tertiary-toggle]="!selectedMenuSections.breakfast"
+            aria-label="Button that displays the name of the emotion">
+            <mat-icon class="on-tertiary-text">breakfast_dining</mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-fab class="tertiary" matTooltip="Batidos" (click)="selectMenuSection('smoothie', menuSection)" [class.tertiary-toggle]="!selectedMenuSections.smoothie"
+            aria-label="Button that displays the name of the emotion">
+            <mat-icon svgIcon="smoothie" class="on-tertiary-text"></mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-fab class="tertiary" matTooltip="Repostería" (click)="selectMenuSection('cake', menuSection)" [class.tertiary-toggle]="!selectedMenuSections.cake"
+            aria-label="Button that displays the name of the emotion">
+            <mat-icon class="on-tertiary-text">bakery_dining</mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-fab class="tertiary" matTooltip="Tés" (click)="selectMenuSection('tea', menuSection)" [class.tertiary-toggle]="!selectedMenuSections.tea"
+            aria-label="Button that displays the name of the emotion">
+            <mat-icon class="on-tertiary-text">emoji_food_beverage</mat-icon>
+          </button>
+        </li>
+      </ul>
+    </div>
   </header>
-  <app-menu-category [categoryTitle]="'Cafés'" [filteredItems]="coffeeFilteredItems" [loadMenu]="loadMenu"></app-menu-category>
-  <app-menu-category [categoryTitle]="'Batidos'" [filteredItems]="smoothieFilteredItems" [loadMenu]="loadMenu"></app-menu-category>
+  <app-menu-category [categoryTitle]="'Cafés'" [filteredItems]="coffeeFilteredItems" [loadMenu]="loadMenu.coffee" [showSection]="selectedMenuSections.coffee"></app-menu-category>
+  <app-menu-category [categoryTitle]="'Desayunos'" [filteredItems]="breakfastFilteredItems" [loadMenu]="loadMenu.breakfast" [showSection]="selectedMenuSections.breakfast"></app-menu-category>
+  <app-menu-category [categoryTitle]="'Batidos'" [filteredItems]="smoothieFilteredItems" [loadMenu]="loadMenu.smoothie" [showSection]="selectedMenuSections.smoothie"></app-menu-category>
 </section>
