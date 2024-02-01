@@ -2,7 +2,7 @@ export interface MenuItem {
   name: string;
   ingredients: string;
   emotion: MenuMood;
-  type: "coffee" | string;
+  type: "coffee" | "smoothie" | string;
   image: string;
 }
 

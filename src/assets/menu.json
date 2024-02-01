@@ -11,7 +11,7 @@
     "ingredients": "Espresso, chocolate caliente, crema",
     "emotion": "sad",
     "type": "coffee",
-    "image": "/cafe/cafe1.jpg"
+    "image": "/cafe/cafe16.jpg"
   },
   {
     "name": "Café Neutro",
@@ -25,7 +25,7 @@
     "ingredients": "Café, leche de almendra, toque de vainilla",
     "emotion": "stressed",
     "type": "coffee",
-    "image": "/cafe/cafe1.jpg"
+    "image": "/cafe/cafe12.jpg"
   },
   {
     "name": "Expreso Furioso",
@@ -39,21 +39,21 @@
     "ingredients": "Espresso, chocolate caliente, leche de vainilla",
     "emotion": "sad",
     "type": "coffee",
-    "image": "/cafe/cafe1.jpg"
+    "image": "/cafe/cafe17.jpg"
   },
   {
     "name": "Café en Equilibrio",
     "ingredients": "Café cortado con leche",
     "emotion": "neutral",
     "type": "coffee",
-    "image": "/cafe/cafe1.jpg"
+    "image": "/cafe/cafe9.jpg"
   },
   {
     "name": "Latte Zen",
     "ingredients": "Café, leche de coco, sirope de miel",
     "emotion": "stressed",
     "type": "coffee",
-    "image": "/cafe/cafe1.jpg"
+    "image": "/cafe/cafe13.jpg"
   },
   {
     "name": "Expreso Irritado",
@@ -74,7 +74,7 @@
     "ingredients": "Espresso, leche de almendra, canela",
     "emotion": "stressed",
     "type": "coffee",
-    "image": "/cafe/cafe1.jpg"
+    "image": "/cafe/cafe14.jpg"
   },
   {
     "name": "Mocha Encantado",
@@ -88,7 +88,7 @@
     "ingredients": "Café americano, leche, azúcar",
     "emotion": "neutral",
     "type": "coffee",
-    "image": "/cafe/cafe1.jpg"
+    "image": "/cafe/cafe10.jpg"
   },
   {
     "name": "Expreso Eufórico",
@@ -102,28 +102,28 @@
     "ingredients": "Espresso, chocolate caliente, leche condensada",
     "emotion": "sad",
     "type": "coffee",
-    "image": "/cafe/cafe1.jpg"
+    "image": "/cafe/cafe18.jpg"
   },
   {
     "name": "Latte en Calma",
     "ingredients": "Café, leche de almendra, vainilla",
     "emotion": "stressed",
     "type": "coffee",
-    "image": "/cafe/cafe1.jpg"
+    "image": "/cafe/cafe15.jpg"
   },
   {
     "name": "Mocha con Pesar",
     "ingredients": "Espresso, chocolate caliente, leche de almendra",
     "emotion": "sad",
     "type": "coffee",
-    "image": "/cafe/cafe1.jpg"
+    "image": "/cafe/cafe19.jpg"
   },
   {
     "name": "Latte Silencioso",
     "ingredients": "Café, leche, canela",
     "emotion": "neutral",
     "type": "coffee",
-    "image": "/cafe/cafe1.jpg"
+    "image": "/cafe/cafe11.jpg"
   },
   {
     "name": "Expreso Explosivo",
@@ -131,5 +131,75 @@
     "emotion": "angry",
     "type": "coffee",
     "image": "/cafe/cafe7.jpg"
+  },
+  {
+    "name": "Batido Feliz",
+    "ingredients": "Plátano, fresas, yogur natural",
+    "emotion": "happy",
+    "type": "smoothie",
+    "image": "/batidos/batido1.jpg"
+  },
+  {
+    "name": "Batido Encantador",
+    "ingredients": "Mango, piña, leche de coco",
+    "emotion": "happy",
+    "type": "smoothie",
+    "image": "/batidos/batido2.jpg"
+  },
+  {
+    "name": "Batido Melancólico",
+    "ingredients": "Arándanos, plátano, leche de almendra",
+    "emotion": "sad",
+    "type": "smoothie",
+    "image": "/batidos/batido9.jpg"
+  },
+  {
+    "name": "Batido Desilusión",
+    "ingredients": "Granadina, naranja, sorbete de limón",
+    "emotion": "sad",
+    "type": "smoothie",
+    "image": "/batidos/batido10.jpg"
+  },
+  {
+    "name": "Batido Tranquilo",
+    "ingredients": "Kiwi, pera, leche de almendra",
+    "emotion": "neutral",
+    "type": "smoothie",
+    "image": "/batidos/batido5.jpg"
+  },
+  {
+    "name": "Batido Equilibrio",
+    "ingredients": "Manzana, mango, leche de coco",
+    "emotion": "neutral",
+    "type": "smoothie",
+    "image": "/batidos/batido6.jpg"
+  },
+  {
+    "name": "Batido Zen",
+    "ingredients": "Té verde, piña, aguacate",
+    "emotion": "stressed",
+    "type": "smoothie",
+    "image": "/batidos/batido7.jpg"
+  },
+  {
+    "name": "Batido Relajado",
+    "ingredients": "Mango, coco, yogur griego",
+    "emotion": "stressed",
+    "type": "smoothie",
+    "image": "/batidos/batido8.jpg"
+  },
+  {
+    "name": "Batido Explosivo",
+    "ingredients": "Frutas del bosque, jengibre, leche de coco",
+    "emotion": "angry",
+    "type": "smoothie",
+    "image": "/batidos/batido3.jpg"
+  },
+  {
+    "name": "Batido Furioso",
+    "ingredients": "Frambuesas, sandía, chile",
+    "emotion": "angry",
+    "type": "smoothie",
+    "image": "/batidos/batido4.jpg"
   }
 ]
