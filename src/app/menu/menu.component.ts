@@ -26,14 +26,16 @@ export class MenuComponent implements OnInit {
   private smoothieItems: MenuItem[] = [];
   private breakfastItems: MenuItem[] = [];
   private cakeItems: MenuItem[] = [];
+  private teaItems: MenuItem[] = [];
   coffeeFilteredItems: MenuItem[] = [];
   smoothieFilteredItems: MenuItem[] = [];
   breakfastFilteredItems: MenuItem[] = [];
   cakeFilteredItems: MenuItem[] = [];
+  teaFilteredItems: MenuItem[] = [];
 
   selectedMood: MenuMoodExtended = "none";
-  selectedMenuSections: MenuSections = { coffee: false, smoothie: false, cake: true, tea: false, breakfast: false };
-  loadMenu: MenuSections = { coffee: false, breakfast: true, smoothie: false, cake: true, tea: false };
+  selectedMenuSections: MenuSections = { coffee: true, smoothie: false, cake: false, tea: true, breakfast: true };
+  loadMenu: MenuSections = { coffee: false, breakfast: false, smoothie: false, cake: false, tea: false };
 
   constructor(private menuService: MenuService) { }
 
@@ -43,18 +45,21 @@ export class MenuComponent implements OnInit {
       this.smoothieItems = response.filter(item => item.type === "smoothie");
       this.breakfastItems = response.filter(item => item.type === "breakfast");
       this.cakeItems = response.filter(item => item.type === "cake");
+      this.teaItems = response.filter(item => item.type === "tea");
       if (this.selectedMood !== "none") {
         const mood = this.selectedMood;
         this.showCoffeeItems(this.coffeeItems.filter(item => item.emotion === mood));
         this.showSmoothieItems(this.smoothieItems.filter(item => item.emotion === mood));
         this.showBreakfastItems(this.breakfastItems.filter(item => item.emotion === mood));
         this.showCakesItems(this.cakeItems.filter(item => item.emotion === mood));
+        this.showTeasItems(this.teaItems.filter(item => item.emotion === mood));
       }
       else {
         this.showCoffeeItems(this.coffeeItems);
         this.showSmoothieItems(this.smoothieItems);
         this.showBreakfastItems(this.breakfastItems);
         this.showCakesItems(this.cakeItems);
+        this.showTeasItems(this.teaItems);
       }
     });
   }
@@ -67,6 +72,7 @@ export class MenuComponent implements OnInit {
       this.showSmoothieItems(this.smoothieItems);
       this.showBreakfastItems(this.breakfastItems);
       this.showCakesItems(this.cakeItems);
+      this.showTeasItems(this.teaItems);
     }
     else {
       this.selectedMood = mood;
@@ -74,6 +80,7 @@ export class MenuComponent implements OnInit {
       this.showSmoothieItems(this.smoothieItems.filter(item => item.emotion === mood));
       this.showBreakfastItems(this.breakfastItems.filter(item => item.emotion === mood));
       this.showCakesItems(this.cakeItems.filter(item => item.emotion === mood));
+      this.showTeasItems(this.teaItems.filter(item => item.emotion === mood));
     }
   }
 
@@ -84,6 +91,7 @@ export class MenuComponent implements OnInit {
     this.loadMenu.smoothie = false;
     this.loadMenu.breakfast = false;
     this.loadMenu.cake = false;
+    this.loadMenu.tea = false;
     if (!wasVisible)
       this.selectedMenuSections[type] = !this.selectedMenuSections[type];
     setTimeout(() => {
@@ -93,6 +101,7 @@ export class MenuComponent implements OnInit {
       this.loadMenu.smoothie = true;
       this.loadMenu.breakfast = true;
       this.loadMenu.cake = true;
+      this.loadMenu.tea = true;
     }, 450);
   }
 
@@ -125,6 +134,14 @@ export class MenuComponent implements OnInit {
     setTimeout(() => {
       this.cakeFilteredItems = items;
       this.loadMenu.cake = true;
+    }, 350);
+  }
+
+  private async showTeasItems(items: MenuItem[]): Promise<void> {
+    this.loadMenu.tea = false;
+    setTimeout(() => {
+      this.teaFilteredItems = items;
+      this.loadMenu.tea = true;
     }, 350);
   }
 }

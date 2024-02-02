@@ -203,6 +203,41 @@
     "image": "/batidos/batido4.jpg"
   },
   {
+    "name": "Batido de Chocolate Feliz",
+    "ingredients": "Leche fría, helado de chocolate, sirope de chocolate, crema batida y virutas de chocolate blanco",
+    "emotion": "happy",
+    "type": "smoothie",
+    "image": "/batidos/batido11.jpg"
+  },
+  {
+    "name": "Chocolate Caliente Reconfortante",
+    "ingredients": "Leche caliente con chocolate de alta calidad, un toque de vainilla, crema batida y pequeños malvaviscos",
+    "emotion": "sad",
+    "type": "smoothie",
+    "image": "/batidos/batido15.jpg"
+  },
+  {
+    "name": "Smoothie de Chocolate Equilibrado",
+    "ingredients": "Plátano maduro, leche de almendra, cacao en polvo, yogur natural y hielo",
+    "emotion": "neutral",
+    "type": "smoothie",
+    "image": "/batidos/batido13.jpg"
+  },
+  {
+    "name": "Chocolate Frappé Anti-Estrés",
+    "ingredients": "Leche fría, chocolate amargo, hielo y una pizca de canela",
+    "emotion": "stressed",
+    "type": "smoothie",
+    "image": "/batidos/batido14.jpg"
+  },
+  {
+    "name": "Explosión de Chocolate Furioso",
+    "ingredients": "Batido de chocolate intenso con trozos de chocolate negro, un toque de chile picante y crema batida",
+    "emotion": "angry",
+    "type": "smoothie",
+    "image": "/batidos/batido12.jpg"
+  },
+  {
     "name": "Desayuno Alegre",
     "ingredients": "Tostadas integrales con aguacate y huevo pochado, batido de frutas tropicales",
     "emotion": "happy",
@@ -348,5 +383,75 @@
     "emotion": "angry",
     "type": "cake",
     "image": "/reposteria/pastel4.jpg"
+  },
+  {
+    "name": "Té de Manzana y Canela Alegre",
+    "ingredients": "Té negro con trozos de manzana, canela y pétalos de rosa",
+    "emotion": "happy",
+    "type": "tea",
+    "image": "/tes/te1.jpg"
+  },
+  {
+    "name": "Té Verde con Maracuyá y Mango Vital",
+    "ingredients": "Té verde con maracuyá y mango deshidratados",
+    "emotion": "happy",
+    "type": "tea",
+    "image": "/tes/te2.jpg"
+  },
+  {
+    "name": "Infusión de Lavanda Reconfortante",
+    "ingredients": "Flores de lavanda con hierbabuena y un toque de manzanilla",
+    "emotion": "sad",
+    "type": "tea",
+    "image": "/tes/te9.jpg"
+  },
+  {
+    "name": "Té de Vainilla y Almendra Melancólico",
+    "ingredients": "Té negro con vainilla y almendra",
+    "emotion": "sad",
+    "type": "tea",
+    "image": "/tes/te10.jpg"
+  },
+  {
+    "name": "Té Blanco con Pera Equilibrado",
+    "ingredients": "Té blanco con trozos de pera y jazmín",
+    "emotion": "neutral",
+    "type": "tea",
+    "image": "/tes/te5.jpg"
+  },
+  {
+    "name": "Té de Hierbabuena Sencillo",
+    "ingredients": "Té de hierbabuena fresca",
+    "emotion": "neutral",
+    "type": "tea",
+    "image": "/tes/te6.jpg"
+  },
+  {
+    "name": "Té de Camomila Anti-Estrés",
+    "ingredients": "Flores de camomila con lavanda y melisa",
+    "emotion": "stressed",
+    "type": "tea",
+    "image": "/tes/te7.jpg"
+  },
+  {
+    "name": "Té de Jengibre y Limón Relajante",
+    "ingredients": "Té de jengibre con ralladura de limón",
+    "emotion": "stressed",
+    "type": "tea",
+    "image": "/tes/te8.jpg"
+  },
+  {
+    "name": "Té Chai Energizante",
+    "ingredients": "Té negro con especias como canela, cardamomo y jengibre",
+    "emotion": "angry",
+    "type": "tea",
+    "image": "/tes/te3.jpg"
+  },
+  {
+    "name": "Té de Hibisco Picante",
+    "ingredients": "Té de hibisco con chile y pimienta negra",
+    "emotion": "angry",
+    "type": "tea",
+    "image": "/tes/te4.jpg"
   }
 ]
