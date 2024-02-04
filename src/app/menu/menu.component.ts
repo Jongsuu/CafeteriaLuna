@@ -34,7 +34,7 @@ export class MenuComponent implements OnInit {
   teaFilteredItems: MenuItem[] = [];
 
   selectedMood: MenuMoodExtended = "none";
-  selectedMenuSections: MenuSections = { coffee: true, smoothie: false, cake: false, tea: true, breakfast: true };
+  selectedMenuSections: MenuSections = { coffee: true, smoothie: true, cake: true, tea: true, breakfast: true };
   loadMenu: MenuSections = { coffee: false, breakfast: false, smoothie: false, cake: false, tea: false };
 
   constructor(private menuService: MenuService) { }

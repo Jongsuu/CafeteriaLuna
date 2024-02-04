@@ -1,0 +1,26 @@
+<section class="footer-section secondary-container">
+  <h3 class="display-small on-secondary-container-text">Encuéntranos</h3>
+  <div class="contact-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1774.4252798213656!2d-5.877221660970807!3d43.38776174277903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368d957ea11a07%3A0xda21d1ecb84b0671!2sEl%20Pevidal%2C%2033194%20Oviedo%2C%20Asturias!5e1!3m2!1sca!2ses!4v1706960771468!5m2!1sca!2ses"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <mat-card class="contact-info secondary">
+      <mat-card-header>
+        <mat-card-title class="on-secondary-text title-large">Estamos en <span class="on-primary-text">El Pevidal, Astúries</span></mat-card-title>
+        <mat-card-subtitle class="on-secondary-text title-medium"><mat-icon class="on-secondary-text">phone_in_talk</mat-icon><div><span>No te quedes sin mesa, llámanos al </span><a href="tel: Prueba">572372924</a></div></mat-card-subtitle>
+        <mat-card-subtitle class="on-secondary-text title-medium"><mat-icon class="on-secondary-text">local_shipping</mat-icon><span>También te lo llevamos a casa</span></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <h6 class="on-primary-text title-medium"><mat-icon>date_range</mat-icon><span>¿Cuándo puedes visitarnos?</span></h6>
+        <ul class="contact-info-schedule">
+          @for (day of schedule; track day.weekDay) {
+          <li class="schedule-item">
+            <span class="on-primary-text">{{ day.weekDay }}</span>
+            <span class="on-secondary-text">{{ day.time }}</span>
+          </li>
+          }
+        </ul>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>

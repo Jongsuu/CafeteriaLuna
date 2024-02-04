@@ -1,0 +1,96 @@
+.footer-section {
+  padding: 24px 24px 10%;
+}
+
+.footer-section h3 {
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.contact-container iframe {
+  border: 0;
+  width: 600px;
+  height: 450px;
+}
+
+.contact-info mat-card-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-info mat-icon {
+  font-size: var(--md-sys-typescale-title-large-font-size);
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: var(--md-sys-color-on-primary);
+}
+
+.contact-info mat-card-content h6 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.contact-info-schedule {
+  margin-top: 6px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+.contact-info-schedule li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.schedule-item span:first-of-type {
+  font-weight: 700;
+  width: 100%;
+}
+
+.schedule-item span:nth-child(2) {
+  margin-left: 10px;
+}
+
+@media(max-width: 1366px) {
+  .contact-container iframe {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .footer-section {
+    padding: 24px 12px;
+  }
+
+  .contact-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .contact-container iframe {
+    width: auto;
+    height: 100%;
+  }
+
+  .contact-info-schedule {
+    padding: 0;
+  }
+}
