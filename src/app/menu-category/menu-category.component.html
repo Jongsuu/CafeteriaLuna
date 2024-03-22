@@ -1,7 +1,7 @@
 @if (showSection) {
 <section class="menu-category" [class.loaded-menu]="loadMenu">
   <div>
-    <h5 class="headline-large on-tertiary-container-text">{{ categoryTitle }}</h5>
+    <h5 class="headline-large on-tertiary-container-text" id="{{ menuType?.toString() }}">{{ categoryTitle }}</h5>
     @if (filteredItems.length > 0) {
     <ul>
       @for (item of filteredItems; track item.name) {

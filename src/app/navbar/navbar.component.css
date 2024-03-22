@@ -1,0 +1,65 @@
+section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  padding: 12px 36px;
+  border-radius: 24px;
+  margin: 0;
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px 48px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+nav ul.scrolled {
+  background-color: var(--md-sys-color-secondary-translucent);
+  backdrop-filter: blur(4px);
+}
+
+.scrolled .nav-link {
+  color: var(--md-sys-color-on-secondary);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  font-family: var(--md-sys-typescale-title-large-font-family-name);
+  font-style: var(--md-sys-typescale-title-large-font-family-style);
+  font-weight: var(--md-sys-typescale-title-large-font-weight);
+  font-size: var(--md-sys-typescale-title-large-font-size);
+  letter-spacing: var(--md-sys-typescale-title-large-letter-spacing);
+  line-height: var(--md-sys-typescale-title-large-line-height);
+  padding-bottom: 2px;
+  transition: color 0.3s;
+}
+
+.nav-link::before {
+  content: '';
+  background-color: var(--md-sys-color-primary-container);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 3px;
+  transition: width .3s, right .3s, left .3s;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+  left: 0;
+  right: initial;
+}

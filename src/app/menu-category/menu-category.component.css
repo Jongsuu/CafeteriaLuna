@@ -1,5 +1,5 @@
 .menu-category {
-  margin-top: 32px;
+  margin-bottom: 48px;
   opacity: 0;
   width: 100%;
   display: flex;
@@ -15,7 +15,7 @@
   transform: translateY(0);
 }
 
-.menu-category > div {
+.menu-category>div {
   width: 100%;
 }
 

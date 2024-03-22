@@ -85,24 +85,22 @@ export class MenuComponent implements OnInit {
   }
 
   selectMenuSection(type: MenuType, menuSection: HTMLElement): void {
-    menuSection.scrollIntoView({ block: "center", behavior: "smooth" });
     let wasVisible = this.selectedMenuSections[type];
-    this.loadMenu.coffee = false;
-    this.loadMenu.smoothie = false;
-    this.loadMenu.breakfast = false;
-    this.loadMenu.cake = false;
-    this.loadMenu.tea = false;
-    if (!wasVisible)
+    this.loadMenu[type] = false;
+    if (!wasVisible) {
       this.selectedMenuSections[type] = !this.selectedMenuSections[type];
+      setTimeout(() => {
+        document.querySelector(`#${type}`)?.scrollIntoView({ block: "center", behavior: "smooth" });
+      }, 50);
+    }
+    else
+      menuSection.scrollIntoView({ block: "start", behavior: "smooth" });
     setTimeout(() => {
-      if (wasVisible)
+      if (wasVisible) {
         this.selectedMenuSections[type] = false;
-      this.loadMenu.coffee = true;
-      this.loadMenu.smoothie = true;
-      this.loadMenu.breakfast = true;
-      this.loadMenu.cake = true;
-      this.loadMenu.tea = true;
-    }, 450);
+      }
+      this.loadMenu[type] = true;
+    }, 350);
   }
 
   private async showCoffeeItems(items: MenuItem[]): Promise<void> {
