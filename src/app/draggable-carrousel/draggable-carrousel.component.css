@@ -13,7 +13,7 @@
   width: 100%;
   list-style: none;
   overflow: hidden;
-  scroll-snap-type: x proximity;
+  scroll-snap-type: x mandatory;
 }
 
 .carousel-arrow {

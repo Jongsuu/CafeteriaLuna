@@ -4,7 +4,7 @@
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 2px 2px 5px -3px #000;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 
 .carousel-item {

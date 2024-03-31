@@ -1,5 +1,5 @@
 .menu-item {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   height: 300px;
   width: 400px;
 }
