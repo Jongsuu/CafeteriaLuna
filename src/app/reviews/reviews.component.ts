@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ReviewsService } from '../reviews.service';
 import { ReviewItem } from '../../interfaces/reviews.interface';
 import { DraggableCarrouselComponent } from "../draggable-carrousel/draggable-carrousel.component";
@@ -12,6 +12,7 @@ import { DraggableCarrouselComponent } from "../draggable-carrousel/draggable-ca
 })
 export class ReviewsComponent implements OnInit {
 
+  @Input() isMobile = false;
   reviews: ReviewItem[] = [];
 
   constructor(private reviewsService: ReviewsService) { }

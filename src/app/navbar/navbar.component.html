@@ -1,11 +1,39 @@
 <section>
   <nav [class.scrolled]="scrolled">
-    <ul>
-      @for (item of links; track item.name) {
-      <li>
-        <a [href]="item.href" class="nav-link">{{ item.name }}</a>
-      </li>
+      @if (isMobile) {
+      <ul class="nav-list-container" [class.hide]="navMenuOpen">
+        <li>
+          <button class="nav-link-menu-button" (click)="openNavMenu()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </li>
+      </ul>
+      <header class="nav-link-menu" [class.open]="navMenuOpen">
+        <div>
+          <button class="nav-link-menu-close" (click)="closeNavMenu()">
+            <mat-icon>close</mat-icon>
+          </button>
+          <ul>
+            <li>
+              <img src="/assets/logo.png" width="150px" height="150px" />
+            </li>
+            @for (item of links; track item.name) {
+            <li>
+              <a [href]="item.href" class="nav-link-menu-item" (click)="closeNavMenu()">{{ item.name }}</a>
+            </li>
+            }
+          </ul>
+        </div>
+      </header>
       }
-    </ul>
+      @else {
+      <ul class="nav-list-container">
+        @for (item of links; track item.name) {
+          <li>
+            <a [href]="item.href" class="nav-link">{{ item.name }}</a>
+          </li>
+        }
+      </ul>
+      }
   </nav>
 </section>

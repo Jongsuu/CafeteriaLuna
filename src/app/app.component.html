@@ -1,8 +1,10 @@
 <main>
-  <app-navbar></app-navbar>
-  <app-home></app-home>
-  <app-menu></app-menu>
-  <app-reviews></app-reviews>
-  <app-contact></app-contact>
+  <app-navbar [isMobile]="isMobile" (navMenuOpenChange)="changeNavMenuOpen($event)" [navMenuOpen]="isNavMenuOpen"></app-navbar>
+  <div [class.hide]="isNavMenuOpen">
+    <app-home></app-home>
+    <app-menu [isMobile]="isMobile"></app-menu>
+    <app-reviews [isMobile]="isMobile"></app-reviews>
+    <app-contact></app-contact>
+  </div>
   <router-outlet />
 </main>

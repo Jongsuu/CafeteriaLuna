@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
@@ -21,6 +21,7 @@ import { MenuCategoryComponent } from '../menu-category/menu-category.component'
   styleUrl: './menu.component.css'
 })
 export class MenuComponent implements OnInit {
+  @Input() isMobile = false;
 
   private coffeeItems: MenuItem[] = [];
   private smoothieItems: MenuItem[] = [];

@@ -72,9 +72,9 @@
       </ul>
     </div>
   </header>
-  <app-menu-category [categoryTitle]="'Cafés'" [filteredItems]="coffeeFilteredItems" [loadMenu]="loadMenu.coffee" [showSection]="selectedMenuSections.coffee" [menuType]="'coffee'"></app-menu-category>
-  <app-menu-category [categoryTitle]="'Desayunos'" [filteredItems]="breakfastFilteredItems" [loadMenu]="loadMenu.breakfast" [showSection]="selectedMenuSections.breakfast" [menuType]="'breakfast'"></app-menu-category>
-  <app-menu-category [categoryTitle]="'Batidos'" [filteredItems]="smoothieFilteredItems" [loadMenu]="loadMenu.smoothie" [showSection]="selectedMenuSections.smoothie" [menuType]="'smoothie'"></app-menu-category>
-  <app-menu-category [categoryTitle]="'Repostería'" [filteredItems]="cakeFilteredItems" [loadMenu]="loadMenu.cake" [showSection]="selectedMenuSections.cake" [menuType]="'cake'"></app-menu-category>
-  <app-menu-category [categoryTitle]="'Tés'" [filteredItems]="teaFilteredItems" [loadMenu]="loadMenu.tea" [showSection]="selectedMenuSections.tea" [menuType]="'tea'"></app-menu-category>
+  <app-menu-category [isMobile]="isMobile" [categoryTitle]="'Cafés'" [filteredItems]="coffeeFilteredItems" [loadMenu]="loadMenu.coffee" [showSection]="selectedMenuSections.coffee" [menuType]="'coffee'"></app-menu-category>
+  <app-menu-category [isMobile]="isMobile" [categoryTitle]="'Desayunos'" [filteredItems]="breakfastFilteredItems" [loadMenu]="loadMenu.breakfast" [showSection]="selectedMenuSections.breakfast" [menuType]="'breakfast'"></app-menu-category>
+  <app-menu-category [isMobile]="isMobile" [categoryTitle]="'Batidos'" [filteredItems]="smoothieFilteredItems" [loadMenu]="loadMenu.smoothie" [showSection]="selectedMenuSections.smoothie" [menuType]="'smoothie'"></app-menu-category>
+  <app-menu-category [isMobile]="isMobile" [categoryTitle]="'Repostería'" [filteredItems]="cakeFilteredItems" [loadMenu]="loadMenu.cake" [showSection]="selectedMenuSections.cake" [menuType]="'cake'"></app-menu-category>
+  <app-menu-category [isMobile]="isMobile" [categoryTitle]="'Tés'" [filteredItems]="teaFilteredItems" [loadMenu]="loadMenu.tea" [showSection]="selectedMenuSections.tea" [menuType]="'tea'"></app-menu-category>
 </section>

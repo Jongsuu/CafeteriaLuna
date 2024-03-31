@@ -2,7 +2,7 @@
 <section class="menu-category" [class.loaded-menu]="loadMenu">
   <div>
     <h5 class="headline-large on-tertiary-container-text" id="{{ menuType?.toString() }}">{{ categoryTitle }}</h5>
-    <app-draggable-carrousel [items]="filteredItems" [carouselType]="1"></app-draggable-carrousel>
+    <app-draggable-carrousel [items]="filteredItems" [carouselType]="1" [isMobile]="isMobile"></app-draggable-carrousel>
   </div>
 </section>
 }

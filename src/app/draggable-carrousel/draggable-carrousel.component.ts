@@ -1,7 +1,6 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { CarouselReviewItemComponent } from '../carousel-review-item/carousel-review-item.component';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { CarouselMenuItemComponent } from '../carousel-menu-item/carousel-menu-item.component';
 
 export enum DraggableCarouselType {
@@ -20,23 +19,17 @@ export enum DraggableCarouselType {
   templateUrl: './draggable-carrousel.component.html',
   styleUrl: './draggable-carrousel.component.css'
 })
-export class DraggableCarrouselComponent implements OnInit {
+export class DraggableCarrouselComponent {
   @ViewChild("carousel") carousel!: ElementRef<HTMLUListElement>;
 
   @Input() items: any[] = [];
   @Input() carouselType: DraggableCarouselType = DraggableCarouselType.Review;
+  @Input() isMobile = false;
 
   currentIndex = 0;
-  isMobile = false;
   isShortList = false;
 
-  constructor(private responsive: BreakpointObserver) { }
-
-  ngOnInit(): void {
-    this.responsive.observe([Breakpoints.Small, Breakpoints.XSmall]).subscribe(result => {
-      this.isMobile = result.breakpoints[Breakpoints.Small] || result.breakpoints[Breakpoints.XSmall];
-    });
-  }
+  constructor() { }
 
   public isReviewItem(): boolean {
     return this.carouselType === DraggableCarouselType.Review;

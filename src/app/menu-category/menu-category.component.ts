@@ -14,5 +14,6 @@ export class MenuCategoryComponent {
   @Input() filteredItems: MenuItem[] = [];
   @Input() loadMenu: boolean = false;
   @Input() showSection: boolean = true;
+  @Input() isMobile = false;
   @Input() menuType?: MenuType;
 }
