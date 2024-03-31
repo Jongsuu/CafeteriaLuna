@@ -1,6 +1,6 @@
 <section>
-  <nav>
-    <ul [class.scrolled]="scrolled">
+  <nav [class.scrolled]="scrolled">
+    <ul>
       @for (item of links; track item.name) {
       <li>
         <a [href]="item.href" class="nav-link">{{ item.name }}</a>

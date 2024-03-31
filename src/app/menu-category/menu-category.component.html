@@ -2,29 +2,7 @@
 <section class="menu-category" [class.loaded-menu]="loadMenu">
   <div>
     <h5 class="headline-large on-tertiary-container-text" id="{{ menuType?.toString() }}">{{ categoryTitle }}</h5>
-    @if (filteredItems.length > 0) {
-    <ul>
-      @for (item of filteredItems; track item.name) {
-      <li>
-        <mat-card class="tertiary menu-item">
-          <mat-card-header>
-            <picture mat-card-avatar>
-              @if (item.emotion === "angry" || item.emotion === "stressed") {
-              <mat-icon class="on-tertiary-text" svgIcon="{{ getIcon(item.emotion) }}"></mat-icon>
-              }
-              @else {
-              <mat-icon class="on-tertiary-text">{{ getIcon(item.emotion) }}</mat-icon>
-              }
-            </picture>
-            <mat-card-title class="on-tertiary-text">{{ item.name }}</mat-card-title>
-            <mat-card-subtitle class="on-tertiary-text">{{ item.ingredients }}</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="/assets/menu{{item.image}}" alt="Foto de {{ item.name }}" loading="lazy"/>
-        </mat-card>
-      </li>
-      }
-    </ul>
-    }
+    <app-draggable-carrousel [items]="filteredItems" [carouselType]="1"></app-draggable-carrousel>
   </div>
 </section>
 }

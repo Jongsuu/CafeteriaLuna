@@ -19,7 +19,7 @@ export class NavbarComponent {
     },
     {
       name: "Reseñas",
-      href: "#resenas"
+      href: "#reseñas"
     },
     {
       name: "Encuéntranos",

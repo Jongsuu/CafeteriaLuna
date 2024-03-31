@@ -1,0 +1,19 @@
+@if (item) {
+<div class="carousel-item-container tertiary">
+  <li class="carousel-item">
+    <article class="carousel-item-inner">
+      <div>
+        <ul class="stars-container">
+          @for (star of starArray; track star) {
+          <li>
+            <mat-icon [class.star-filled]="star <= item.stars">star_rate</mat-icon>
+          </li>
+          }
+        </ul>
+      </div>
+      <p class="review-comment">{{ item.comment }}</p>
+      <p class="review-username">{{ item.username }}</p>
+    </article>
+  </li>
+</div>
+}

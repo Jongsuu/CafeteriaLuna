@@ -1,0 +1,25 @@
+@if (items.length > 0) {
+<div class="carousel-container">
+  <ul class="carousel" #carousel>
+    @if (isReviewItem()) {
+    @for(item of items; track item.username) {
+    <app-carousel-review-item [item]="item"></app-carousel-review-item>
+    }
+    }
+    @else {
+    @for(item of items; track item.name) {
+    <app-carousel-menu-item [item]="item"></app-carousel-menu-item>
+    }
+    }
+  </ul>
+  @if (!isMobile) {
+  <button class="carousel-arrow carousel-arrow-left" [class.hide]="currentIndex === 0" (click)="prev()">
+    <mat-icon>arrow_back_ios</mat-icon>
+  </button>
+  <button class="carousel-arrow carousel-arrow-right" [class.hide]="currentIndex === items.length - 1 || isShortList" (click)="next()">
+    <mat-icon>arrow_forward_ios</mat-icon>
+  </button>
+  }
+</div>
+{{ checkRender() }}
+}

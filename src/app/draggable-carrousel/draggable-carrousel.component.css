@@ -1,0 +1,85 @@
+.carousel-container {
+  position: relative;
+  display: flex;
+  padding: 0 1rem;
+}
+
+.carousel {
+  display: flex;
+  position: relative;
+  padding: 0 0 1rem 0;
+  margin: 0;
+  gap: 0 15px;
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  scroll-snap-type: x proximity;
+}
+
+.carousel-arrow {
+  position: absolute;
+  margin: 0;
+  cursor: pointer;
+  color: #fff;
+  /*
+  background: rgba(0, 0, 0, 0.7);
+  */
+  background: rgba(0, 0, 0, 1);
+  padding: 0.75rem;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  scale: 1;
+  transition: scale 0.3s ease-in-out;
+  z-index: 1;
+  opacity: 1;
+  border: none;
+  display: grid;
+  place-content: center;
+}
+
+.carousel-arrow.hide {
+  opacity: 0;
+  cursor: default;
+}
+
+.carousel-arrow mat-icon {
+  font-weight: 200;
+  font-size: 1.5rem;
+  width: 1.2rem;
+  height: 1.5rem;
+  width: auto;
+  transform: scale(1);
+  padding: 0;
+}
+
+.carousel-arrow-left {
+  left: -0.5rem;
+}
+
+.carousel-arrow-right {
+  right: -0.5rem;
+}
+
+.carousel-arrow:hover {
+  scale: 1.05;
+}
+
+@media(max-width: 960px) {
+  .carousel {
+    overflow-x: visible;
+    scrollbar-width: none;
+  }
+}
+
+@media(max-width: 768px) {
+  .carousel-container {
+    padding: 0 0.5rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .carousel-container {
+    padding: 0;
+  }
+}

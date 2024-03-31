@@ -363,6 +363,10 @@ button.tertiary-toggle .on-tertiary-text {
   color: var(--md-sys-color-on-tertiary-toggle-on-text) !important;
 }
 
+.tertiary-toggle-on-tertiary-text {
+  color: var(--md-sys-color-on-tertiary-toggle-on-text) !important;
+}
+
 .tertiary-text {
   color: var(--md-sys-color-tertiary) !important;
 }

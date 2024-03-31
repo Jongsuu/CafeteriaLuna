@@ -24,12 +24,12 @@ nav ul {
   transition: background-color 0.3s;
 }
 
-nav ul.scrolled {
+nav.scrolled ul {
   background-color: var(--md-sys-color-secondary-translucent);
   backdrop-filter: blur(4px);
 }
 
-.scrolled .nav-link {
+nav.scrolled .nav-link {
   color: var(--md-sys-color-on-secondary);
 }
 
@@ -62,4 +62,10 @@ nav ul.scrolled {
   width: 100%;
   left: 0;
   right: initial;
+}
+
+@media(max-width: 768px) {
+  nav.scrolled {
+    padding: 0 12px;
+  }
 }

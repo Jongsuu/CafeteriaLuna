@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.menu-section > header {
+.menu-section>header {
   padding: 0 10%;
   display: flex;
   justify-content: space-evenly;
@@ -28,7 +28,7 @@
 }
 
 @media(max-width: 1000px) {
-  .menu-section > header {
+  .menu-section>header {
     padding: 0;
   }
 

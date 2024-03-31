@@ -1,0 +1,35 @@
+.menu-item {
+  scroll-snap-align: start;
+  height: 300px;
+  width: 400px;
+}
+
+.menu-item mat-icon {
+  font-size: var(--md-sys-typescale-headline-medium-font-size);
+  height: var(--md-sys-typescale-headline-medium-font-size);
+  width: var(--md-sys-typescale-headline-medium-font-size);
+}
+
+.menu-item img {
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+@media(max-width: 960px) {
+  .menu-item {
+    height: 250px;
+    width: 325px;
+  }
+}
+
+@media(max-width: 500px) {
+  .menu-item {
+    height: 250px;
+    width: 300px;
+  }
+
+  .menu-item picture {
+    display: none;
+  }
+}

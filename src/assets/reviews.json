@@ -1,0 +1,52 @@
+[
+  {
+    "username": "María G.",
+    "comment": "¡Me encanta Cafetería Luna! Siempre que necesito un lugar acogedor para trabajar o simplemente relajarme, este es mi destino. El café es delicioso y el personal es amable y atento.",
+    "stars": 5
+  },
+  {
+    "username": "Juan C.",
+    "comment": "El ambiente de Cafetería Luna es simplemente mágico. Me encanta venir aquí a disfrutar de un buen libro mientras saboreo un exquisito café. ¡Sin duda, mi lugar favorito en la ciudad!",
+    "stars": 5
+  },
+  {
+    "username": "Laura M.",
+    "comment": "¡El café de Cafetería Luna es increíble! Siempre fresco y perfectamente preparado. Además, sus pasteles son para chuparse los dedos. ¡Recomiendo totalmente este lugar!",
+    "stars": 4
+  },
+  {
+    "username": "Pedro R.",
+    "comment": "He probado muchos cafés en la ciudad, pero ninguno se compara con el de Cafetería Luna. Su atención al detalle y la calidad de sus granos hacen que cada visita sea especial. Definitivamente, mi lugar de café de referencia.",
+    "stars": 5
+  },
+  {
+    "username": "Ana S.",
+    "comment": "Cafetería Luna es mi lugar feliz. No solo por su café, que es fantástico, sino también por el ambiente acogedor y relajado que ofrece. Sin duda, el mejor lugar para desconectar y recargar energías.",
+    "stars": 5
+  },
+  {
+    "username": "Carlos L.",
+    "comment": "¡Increíble experiencia en Cafetería Luna! El personal es amable y siempre te reciben con una sonrisa. Además, la variedad de opciones en el menú es genial. Definitivamente, volveré una y otra vez.",
+    "stars": 4
+  },
+  {
+    "username": "Elena P.",
+    "comment": "Cafetería Luna es el lugar perfecto para una cita o una reunión informal con amigos. El ambiente es acogedor, la música es encantadora y el café es simplemente delicioso. ¡Altamente recomendado!",
+    "stars": 5
+  },
+  {
+    "username": "David T.",
+    "comment": "¡Me encanta el ambiente tranquilo y relajado de Cafetería Luna! Es el lugar perfecto para tomar un café y leer un libro. El personal es muy amable y siempre hacen que te sientas bienvenido.",
+    "stars": 4
+  },
+  {
+    "username": "Sofía B.",
+    "comment": "Cafetería Luna es mi refugio favorito en la ciudad. El café es excelente y el ambiente es cálido y acogedor. Siempre me siento como en casa cuando estoy aquí. ¡No puedo recomendarlo lo suficiente!",
+    "stars": 5
+  },
+  {
+    "username": "Luis G.",
+    "comment": "¡Cafetería Luna es un verdadero tesoro! El café es excepcionalmente bueno y el ambiente es muy relajante. Sin duda, el lugar perfecto para una pausa durante el día.",
+    "stars": 5
+  }
+]
