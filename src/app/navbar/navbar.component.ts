@@ -1,4 +1,4 @@
-import { Component, EventEmitter, HostListener, Input, Output } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
@@ -10,7 +10,6 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class NavbarComponent {
   @Input() isMobile = false;
-  @Output() navMenuOpenChange = new EventEmitter<boolean>();
 
   links = [
     {
@@ -50,9 +49,7 @@ export class NavbarComponent {
   }
 
   private toggleNavMenu(enable: boolean): void {
+    document.body.classList.toggle("hide", enable);
     this.navMenuOpen = enable;
-    setTimeout(() => {
-      this.navMenuOpenChange.emit(this.navMenuOpen);
-    });
   }
 }

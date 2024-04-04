@@ -3,7 +3,7 @@
       @if (isMobile) {
       <ul class="nav-list-container" [class.hide]="navMenuOpen">
         <li>
-          <button class="nav-link-menu-button" (click)="openNavMenu()">
+          <button class="nav-link-menu-button" (click)="openNavMenu()" [class.open]="navMenuOpen">
             <mat-icon>menu</mat-icon>
           </button>
         </li>

@@ -271,6 +271,10 @@
   --md-sys-typescale-title-small-letter-spacing: 0.10px;
 }
 
+.hide {
+  overflow: hidden;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;

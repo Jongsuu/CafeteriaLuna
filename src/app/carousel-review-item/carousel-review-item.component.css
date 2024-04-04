@@ -2,8 +2,8 @@
   width: 300px;
   height: 250px;
   padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 2px 2px 5px -3px #000;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 7px -3px #000;
   scroll-snap-align: center;
 }
 

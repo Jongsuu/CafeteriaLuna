@@ -31,16 +31,11 @@ const SMOOTHIE = `<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0
 export class AppComponent implements OnInit {
   isDarkMode = false;
   isMobile = false;
-  isNavMenuOpen = false;
 
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private responsive: BreakpointObserver) {
     iconRegistry.addSvgIconLiteral('sentiment_stressed', sanitizer.bypassSecurityTrustHtml(SENTIMENT_STRESSED));
     iconRegistry.addSvgIconLiteral('sentiment_angry', sanitizer.bypassSecurityTrustHtml(SENTIMENT_ANGRY));
     iconRegistry.addSvgIconLiteral('smoothie', sanitizer.bypassSecurityTrustHtml(SMOOTHIE));
-  }
-
-  changeNavMenuOpen(e: boolean): void {
-    this.isNavMenuOpen = e;
   }
 
   private media(query: string): Observable<boolean> {
