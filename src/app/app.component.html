@@ -1,8 +1,10 @@
 <app-navbar [isMobile]="isMobile"></app-navbar>
 <main>
   <app-home></app-home>
+  @defer {
   <app-menu [isMobile]="isMobile"></app-menu>
   <app-reviews [isMobile]="isMobile"></app-reviews>
   <app-contact></app-contact>
+  }
 </main>
 <router-outlet />
